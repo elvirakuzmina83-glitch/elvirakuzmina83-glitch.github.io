@@ -1,0 +1,245 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./font/Roboto-Regular.woff) format('woff');
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+
+.header{
+    background-color: #202020;
+}
+
+.container{
+    max-width: 1290px;
+    margin: auto;
+    /* border:1px  solid red; */
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+   display: grid;
+   grid-template-columns: auto 1fr auto;
+   align-items: center;
+   gap: 115px;
+}
+
+.header__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 79px;
+    align-items: center;
+}
+
+.header__link{
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__link:hover{
+    color: #FF6E30;
+}
+
+.header__link:focus-visible{
+    background-color: #BC572B;
+    outline: none;
+}
+
+.header__link:active{
+    color: #CE4307;
+}
+
+
+
+/* intro  */
+
+.intro{
+    padding-top: 41px;
+    padding-bottom: 68px;
+}
+.intro__container{
+    max-width: 1290px;
+    margin: auto;
+    border: 1px solid red;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.intro__left{
+    background-image: url(./images/intro1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 58px;
+    padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.intro__descr{
+    margin: 0;
+    margin-bottom: 3px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.intro__title{
+    margin: 0;
+    margin-bottom: 19px;
+    color: #FFFFFF;
+    font-size: 36px;
+    max-width: 427px;
+}
+.intro__more{
+    border: none;
+    background-color: #FF6E30;
+    color: #FFFFFF;
+    padding: 22px 15px;
+    font-size: 16px;
+}
+
+.intro__subtitle{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.intro__right{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap:30px;
+}
+
+.intro__main-photo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+/* contacts */
+
+.contacts__container{
+    max-width: 1290px;
+    margin: auto;
+    padding: 68px 0px;
+}
+
+.contacts__title{
+    margin: 0;
+    margin-bottom: 22px;
+    color: #202020;
+    font-size: 24px;
+}
+
+.contacts__content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
+
+/* раздел с картой  */
+
+
+.map{
+    position: relative;
+}
+
+.banner{
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    max-width: 460px;
+    background-color: rgba(32, 32, 32, 0.85);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.banner__title{
+    margin: 0;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.banner__address{
+    margin-bottom: 2px;
+    color: #cacaca;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.banner__tel{
+    text-decoration: none;
+    color: #FF6E30;
+    font-size: 16px;
+
+    background-image: url(./images/phone_orange.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    padding-left: 18px;
+}
+
+/* часть с формой */
+
+.feedback__title{
+    margin: 0;
+    margin-bottom: 5px;
+    color: #202020;
+    font-size: 24px;
+}
+
+.feedback__descr{
+    margin: 0;
+    margin-bottom: 14px;
+    color: #999999;
+    font-size: 16px;
+    max-width: 330px;
+    line-height: 22px;
+}
+
+.form__inp{
+    border: none;
+    outline: none;
+    background-color: #E9e9e9;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px 23px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+.form__send{
+    border: none;
+    background-color: #FF6E30;
+    padding: 15px 22px;
+    color: #FFFFFF;
+}
